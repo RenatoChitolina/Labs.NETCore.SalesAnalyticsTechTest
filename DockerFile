@@ -1,0 +1,10 @@
+﻿# A configuração de conteinerização não foi testada por:
+# 	1 falta de ferramentas instaladas
+# 	2 falta de aprofundamento técnico
+# 	3 Julgar-se desnecessário o total funcionamento para a POC de teste (onde creio que expor a ideia é mais importante)
+
+FROM mcr.microsoft.com/dotnet/core/runtime:2.2
+
+COPY SalesAnalytics.Console/bin/Release/netcoreapp2.2/publish/ consoleApp/
+
+ENTRYPOINT ["dotnet", "consoleApp/SalesAnalytics.Console.dll"]
