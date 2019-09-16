@@ -1,1 +1,1 @@
-.NET Core Console Application com alguns recursos da arquitetura DDD
+.NET Core Console Application com alguns recursos de DDD
